@@ -126,7 +126,7 @@ export default function Navbar() {
                       {displayName}
                     </span>
                   </Link>
-                  <Button variant="ghost" size="icon" onClick={logout} className="text-nexa-lavender-3 hover:text-white hover:bg-white/5 rounded-full w-8 h-8">
+                  <Button variant="ghost" size="icon" onClick={logout} className="text-nexa-lavender-3 hover:text-white hover:bg-white/5 rounded-full w-8 h-8" aria-label="Icon Button">
                     <LogOut size={16} />
                   </Button>
                 </div>
@@ -144,7 +144,7 @@ export default function Navbar() {
               <Button
                 variant="ghost"
                 size="icon"
-                onClick={() => setMobileMenuOpen(true)}
+                onClick={() = aria-label="Icon Button"> setMobileMenuOpen(true)}
                 className="text-nexa-lavender hover:text-white hover:bg-white/5 rounded-xl"
               >
                 <Menu size={24} />

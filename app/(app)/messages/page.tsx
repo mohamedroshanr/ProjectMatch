@@ -137,9 +137,9 @@ export default function MessagesPage() {
               </div>
             </div>
             <div className="flex items-center gap-2 text-nexa-lavender-3">
-              <Button variant="ghost" size="icon" className="hover:text-white rounded-full"><Phone size={18} /></Button>
-              <Button variant="ghost" size="icon" className="hover:text-white rounded-full"><Video size={18} /></Button>
-              <Button variant="ghost" size="icon" className="hover:text-white rounded-full"><MoreVertical size={18} /></Button>
+              <Button variant="ghost" size="icon" className="hover:text-white rounded-full" aria-label="Icon Button"><Phone size={18} /></Button>
+              <Button variant="ghost" size="icon" className="hover:text-white rounded-full" aria-label="Icon Button"><Video size={18} /></Button>
+              <Button variant="ghost" size="icon" className="hover:text-white rounded-full" aria-label="Icon Button"><MoreVertical size={18} /></Button>
             </div>
           </div>
 

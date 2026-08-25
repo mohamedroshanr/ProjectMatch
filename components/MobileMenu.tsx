@@ -45,7 +45,7 @@ export default function MobileMenu({ isOpen, onClose, user, profile, logOut }: M
           >
             <div className="flex items-center justify-between p-5 border-b border-white/5">
               <span className="font-medium text-white">Menu</span>
-              <Button variant="ghost" size="icon" onClick={onClose} className="text-nexa-lavender-3 hover:text-white rounded-full">
+              <Button variant="ghost" size="icon" onClick={onClose} className="text-nexa-lavender-3 hover:text-white rounded-full" aria-label="Icon Button">
                 <X size={20} />
               </Button>
             </div>
@@ -85,7 +85,7 @@ export default function MobileMenu({ isOpen, onClose, user, profile, logOut }: M
                       <p className="text-xs text-nexa-lavender-3 truncate">View Profile</p>
                     </div>
                   </Link>
-                  <Button variant="ghost" size="icon" onClick={() => { logOut(); onClose(); }} className="text-nexa-lavender-3 hover:text-white rounded-full shrink-0">
+                  <Button variant="ghost" size="icon" onClick={() = aria-label="Icon Button"> { logOut(); onClose(); }} className="text-nexa-lavender-3 hover:text-white rounded-full shrink-0">
                     <LogOut size={18} />
                   </Button>
                 </div>

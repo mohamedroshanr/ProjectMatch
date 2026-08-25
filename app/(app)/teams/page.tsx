@@ -136,7 +136,7 @@ export default function TeamsPage() {
                   <Button className="flex-1 bg-white/5 hover:bg-white/10 text-white border-0 rounded-xl">
                     View Details
                   </Button>
-                  <Button size="icon" className="bg-white/5 hover:bg-white/10 text-white border-0 rounded-xl shrink-0">
+                  <Button size="icon" className="bg-white/5 hover:bg-white/10 text-white border-0 rounded-xl shrink-0" aria-label="Icon Button">
                     <MessageSquare size={18} />
                   </Button>
                 </div>

@@ -50,7 +50,7 @@ export function CreateTeamModal({ isOpen, onClose, onCreate }: { isOpen: boolean
           >
             <div className="flex justify-between items-center mb-6">
               <h2 className="text-xl font-bold text-white">Create New Team</h2>
-              <Button variant="ghost" size="icon" onClick={onClose} className="text-nexa-lavender hover:text-white rounded-full">
+              <Button variant="ghost" size="icon" onClick={onClose} className="text-nexa-lavender hover:text-white rounded-full" aria-label="Icon Button">
                 <X size={20} />
               </Button>
             </div>

@@ -56,7 +56,7 @@ export function CreateRequirementModal({ isOpen, onClose }: { isOpen: boolean; o
           >
             <div className="flex justify-between items-center mb-6">
               <h2 className="text-xl font-bold text-white">Post a Requirement</h2>
-              <Button variant="ghost" size="icon" onClick={onClose} className="text-nexa-lavender hover:text-white rounded-full">
+              <Button variant="ghost" size="icon" onClick={onClose} className="text-nexa-lavender hover:text-white rounded-full" aria-label="Icon Button">
                 <X size={20} />
               </Button>
             </div>
