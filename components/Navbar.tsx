@@ -144,7 +144,7 @@ export default function Navbar() {
               <Button
                 variant="ghost"
                 size="icon"
-                onClick={() = aria-label="Icon Button"> setMobileMenuOpen(true)}
+                onClick={() => setMobileMenuOpen(true)}
                 className="text-nexa-lavender hover:text-white hover:bg-white/5 rounded-xl"
               >
                 <Menu size={24} />
