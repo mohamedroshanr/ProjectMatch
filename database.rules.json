@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "chats": {
+      "$threadId": {
+        ".read": "auth != null && (data.child('meta/participants').val().contains(auth.uid))",
+        ".write": "auth != null"
+      }
+    }
+  }
+}

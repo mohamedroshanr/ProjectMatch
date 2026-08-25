@@ -1,26 +1,111 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:is(.dark *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #05020a;
+  --foreground: #fafafa;
+  --card: rgba(10, 5, 20, 0.88);
+  --card-foreground: #fafafa;
+  --popover: #0a0514;
+  --popover-foreground: #fafafa;
+  --primary: #1c4eff;
+  --primary-foreground: #ffffff;
+  --secondary: rgba(255, 255, 255, 0.05);
+  --secondary-foreground: #fafafa;
+  --muted: rgba(255, 255, 255, 0.05);
+  --muted-foreground: #a997ce;
+  --accent: rgba(200, 111, 255, 0.15);
+  --accent-foreground: #c86fff;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: rgba(255, 255, 255, 0.1);
+  --input: rgba(255, 255, 255, 0.05);
+  --ring: #1c4eff;
+  --radius: 0.75rem;
+
+  /* Nexacore Specific Colors */
+  --nexa-navy: #1a0b54;
+  --nexa-lavender: #a997ce;
+  --nexa-lavender-2: #bdaee7;
+  --nexa-lavender-3: #83799e;
+  --nexa-accent: #c86fff;
+  --nexa-blue: #1c4eff;
+  --nexa-orange: #fe881b;
+  --nexa-card-dark: rgba(10, 5, 20, 0.88);
+  --nexa-badge: #291f39;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Map Nexacore colors */
+  --color-nexa-navy: var(--nexa-navy);
+  --color-nexa-lavender: var(--nexa-lavender);
+  --color-nexa-lavender-2: var(--nexa-lavender-2);
+  --color-nexa-lavender-3: var(--nexa-lavender-3);
+  --color-nexa-accent: var(--nexa-accent);
+  --color-nexa-blue: var(--nexa-blue);
+  --color-nexa-orange: var(--nexa-orange);
+  --color-nexa-card-dark: var(--nexa-card-dark);
+  --color-nexa-badge: var(--nexa-badge);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans, Inter, system-ui, sans-serif);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Gradient Classes */
+.nexa-grad-text {
+  background-image: linear-gradient(90deg, var(--nexa-blue), var(--nexa-accent) 50%, var(--nexa-orange));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.nexa-grad-bg {
+  background-image: linear-gradient(90deg, var(--nexa-blue), var(--nexa-accent) 50%, var(--nexa-orange));
 }
