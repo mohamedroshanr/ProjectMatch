@@ -151,6 +151,14 @@ export default function ProfilePage({ params }: { params: Promise<{ id: string }
                 <div className="space-y-3">
                   <div className="p-3 bg-black/40 border border-white/5 rounded-xl">
                     <div className="flex items-center justify-between mb-1">
+                      <span className="text-nexa-blue font-medium text-sm">ProjectMatch</span>
+                      <span className="text-xs text-nexa-lavender-3">TypeScript</span>
+                    </div>
+                    <p className="text-xs text-nexa-lavender">AI-Powered Team Formation Platform for Hackathons & Startups.</p>
+                  </div>
+
+                  <div className="p-3 bg-black/40 border border-white/5 rounded-xl">
+                    <div className="flex items-center justify-between mb-1">
                       <span className="text-nexa-blue font-medium text-sm">edge-ai-robot</span>
                       <span className="text-xs text-nexa-lavender-3">Python</span>
                     </div>
